@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import Home from './pages/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className='width-full bg-gray-200'>
-      <h1 className='bg-indigo-500'>Real Estate</h1>
-    </div>
+      <Navbar />
+      <Home />
     </>
   )
 }
